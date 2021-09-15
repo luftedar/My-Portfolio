@@ -1,11 +1,63 @@
-main {
-  background: url("../img/header-illsutration-mobile@2x.jpg") left top no-repeat;
-  background-size: 100%;
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 0 1.5rem;
+  margin-top: 0;
+  background-color: #fff;
+}
+
+#welcome-text {
+  color: #28352f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/header-illsutration-mobile@2x.jpg") right 90% no-repeat;
+  background-size: 100%;
+  padding: 0 1.5rem;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: #182b4d;
+}
+
+#greentext {
+  color: #36b37e;
+}
+
+#more-text {
+  text-align: center;
+}
+
+.icons {
+  display: block;
+}
+
+#icons {
+  padding: 0 4rem;
+}
+
+#icons ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  margin-top: 2rem;
+}
+
+#icons li {
+  list-style: none;
 }
