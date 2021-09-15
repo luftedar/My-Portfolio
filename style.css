@@ -1,12 +1,11 @@
-* {
-  margin: 0;
-}
-
-body {
-  background: url("../img/header-illsutration-mobile@2x.jpg") center no-repeat;
+main {
+  background: url("../img/header-illsutration-mobile@2x.jpg") left top no-repeat;
+  background-size: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1.5rem;
 }
