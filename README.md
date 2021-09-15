@@ -1,59 +1,51 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portoflio
 
-> One paragraph statement about the project.
+> My first HTML & CSS project in Microverse.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+In this project, semantic HTML5 tags used while positioning for CSS made by using Flexboxes. This project for mobile devices.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- GitHub Workflows, Figma, Browser Developer Tools.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/luftedar/My-Portoflio/feature/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+
+Clone the project by:
+
+git clone https://github.com/luftedar/My-Portoflio.git
+
+cd into the project folder by:
+
+cd My-Portoflio
+
+Open folder with code editor
+
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Web Browser.
+- Code Editor.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/luftedar)
+- Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/or%C3%A7un-u%C4%9Fur-089148181/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
