@@ -18,7 +18,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  background: url("../img/header-illsutration-mobile@2x.jpg") no-repeat;
+  background: url("../img/header-illsutration-mobile@2x.png") no-repeat;
   background-size: cover;
   padding: 0 1.5rem;
 }
