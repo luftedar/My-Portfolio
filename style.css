@@ -1,3 +1,7 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,8 +18,8 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  background: url("../img/header-illsutration-mobile@2x.jpg") right 90% no-repeat;
-  background-size: 100%;
+  background: url("../img/header-illsutration-mobile@2x.jpg") no-repeat;
+  background-size: cover;
   padding: 0 1.5rem;
 }
 
@@ -25,11 +29,13 @@ hgroup {
   justify-content: center;
   text-align: center;
   margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
-  color: #182b4d;
+  color: #172b4d;
+  font-weight: bolder;
 }
 
 #greentext {
@@ -38,18 +44,44 @@ h1 {
 
 #more-text {
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 28px;
+  color: #182b4d;
+  margin-bottom: 0.4rem;
 }
 
 .icons {
   display: block;
+  height: 20px;
+  width: 20px;
+}
+
+#icon1 {
+  background: url("img/twitter.png")  no-repeat;
+}
+
+#icon2 {
+  background: url("img/Linkedin\ icon.png") no-repeat;
+}
+
+#icon3 {
+  background: url("img/medium.png") 70% no-repeat;
+}
+
+#icon4 {
+  background: url("img/github.png")  no-repeat;
+}
+
+#icon5 {
+  background: url("img/angellist.png")  no-repeat;
 }
 
 #icons {
-  padding: 0 4rem;
+  padding: 0 2.2rem;
 }
 
 #icons ul {
-  padding: 0;
+  padding: 0 2.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
