@@ -31,6 +31,7 @@ main {
   background: url("/img/header-illsutration-mobile.png") no-repeat;
   background-size: cover;
   padding: 0 1.5rem;
+  align-items: center;
 }
 
 hgroup {
@@ -87,7 +88,7 @@ h1 {
 }
 
 #icons {
-  padding: 0 2.2rem;
+  padding: 0 0;
 }
 
 #icons ul {
@@ -102,4 +103,24 @@ h1 {
 
 #icons li {
   list-style: none;
+  margin: 0 0.5rem 0.8rem;
+}
+
+#toggle-down {
+  display: block;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+}
+
+#down-toggle {
+  margin-top: 1.5rem;
+  background: url("img/Disabled.png") no-repeat;
+}
+
+#projects-header {
+  font-size: 2.3rem;
+  line-height: 52px;
+  text-align: center;
+
 }
