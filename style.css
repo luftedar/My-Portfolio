@@ -11,8 +11,18 @@ header {
   background-color: #fff;
 }
 
+#welcome-link {
+  text-decoration: none;
+}
+
 #welcome-text {
   color: #28352f;
+}
+
+#toggle-menu {
+  background-color: #fff;
+  border: none;
+  box-sizing: border-box;
 }
 
 main {
