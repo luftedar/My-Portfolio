@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0.5rem 0;
 }
 
 header {
@@ -36,12 +36,13 @@ main {
 }
 
 #welcome-section {
-  background: url("/img/header-illsutration-mobile.png") top 40% right 20% no-repeat;
-  background-size: cover;
+  background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
+  background-size: contain;
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 700px;
 }
 
 hgroup {
@@ -49,9 +50,8 @@ hgroup {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 8rem;
-  margin-bottom: 1.3rem;
-  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
 }
 
 h1 {
@@ -98,7 +98,7 @@ h1 {
 }
 
 #icons {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 #icons ul {
@@ -122,7 +122,7 @@ h1 {
 }
 
 #down-toggle {
-  margin-top: 1.5rem;
+  margin-top: 2.4rem;
   background: url("img/Disabled.png") no-repeat;
 }
 
@@ -133,11 +133,12 @@ h1 {
 }
 
 .section-header {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   line-height: 52px;
   text-align: center;
   font-weight: 700;
   color: #172b4d;
+  margin: 2rem 0 0 0;
 }
 
 #green-line {
@@ -145,7 +146,7 @@ h1 {
   width: 48px;
   height: 4px;
   border-radius: 24px;
-  margin-top: -0.5rem;
+  margin-top: 1.4rem;
   margin-bottom: 3rem;
 }
 
@@ -164,7 +165,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background: #ebf0eb;
-  margin: 1.2rem 0;
+  margin: 1.5rem 0 0 0;
 }
 
 .card-photo {
@@ -217,10 +218,10 @@ h1 {
   border: none;
   padding: 0.8rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 24px;
-  margin-top: 1.7rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.3rem;
 }
 
@@ -229,8 +230,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1.5rem;
-  background: url("img/about-me-background-img.png") top -10px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
+  margin-top: 4rem;
+  background: url("img/about-me-background-img.png") top -10px left no-repeat, url("img/about-me-2.png") top -30px right -5px no-repeat;
   background-size: cover, 68px;
 }
 
@@ -240,4 +241,8 @@ h1 {
   line-height: 32px;
   font-weight: 400;
   color: #42526e;
+}
+
+.btn-resume {
+  margin-top: -1rem;
 }
