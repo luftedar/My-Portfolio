@@ -28,13 +28,15 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #welcome-section {
   background: url("/img/header-illsutration-mobile.png") top 40% right 20% no-repeat;
   background-size: cover;
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 hgroup {
@@ -101,7 +103,6 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex: 1;
-
 }
 
 #icons li {
@@ -113,7 +114,6 @@ h1 {
   display: block;
   height: 45px;
   width: 45px;
-  text-align: center;
 }
 
 #down-toggle {
@@ -121,9 +121,23 @@ h1 {
   background: url("img/Disabled.png") no-repeat;
 }
 
+#projects-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #projects-header {
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 52px;
   text-align: center;
+  font-weight: 700;
+}
 
+#green-line {
+  background-color: #36b37e;
+  width: 48px;
+  height: 4px;
+  border-radius: 24px;
+  margin-top: -0.5rem;
 }
