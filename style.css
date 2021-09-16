@@ -28,10 +28,13 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  background: url("/img/header-illsutration-mobile.png") no-repeat;
+  align-items: center;
+}
+
+#welcome-section {
+  background: url("/img/header-illsutration-mobile.png") top 40% right 20% no-repeat;
   background-size: cover;
   padding: 0 1.5rem;
-  align-items: center;
 }
 
 hgroup {
@@ -39,8 +42,8 @@ hgroup {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 1.3rem;
   font-size: 1.2rem;
 }
 
@@ -88,7 +91,7 @@ h1 {
 }
 
 #icons {
-  padding: 0 0;
+  margin-top: 4rem;
 }
 
 #icons ul {
@@ -98,7 +101,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   flex: 1;
-  margin-top: 2rem;
+
 }
 
 #icons li {
