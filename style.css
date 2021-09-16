@@ -133,7 +133,7 @@ h1 {
 }
 
 .section-header {
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 52px;
   text-align: center;
   font-weight: 700;
@@ -230,4 +230,14 @@ h1 {
   align-items: center;
   text-align: center;
   margin-top: 1.5rem;
+  background: url("img/about-me-background-img.png") top -10px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
+  background-size: cover, 68px;
+}
+
+#about-me p {
+  padding: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 32px;
+  font-weight: 400;
+  color: #42526e;
 }
