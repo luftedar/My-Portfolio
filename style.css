@@ -2,8 +2,32 @@
   font-family: 'Inter', sans-serif;
 }
 
-header {
+.d-flex {
   display: flex;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.d-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.t-center {
+  text-align: center;
+}
+
+body {
+  margin: 0.5rem 0;
+}
+
+header {
+  background: #fff;
+}
+
+nav {
   justify-content: space-between;
   align-items: baseline;
   padding: 0 1.5rem;
@@ -11,31 +35,43 @@ header {
   background-color: #fff;
 }
 
+#welcome-link {
+  text-decoration: none;
+}
+
 #welcome-text {
   color: #28352f;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+
+#toggle-menu {
+  background-color: #fff;
+  border: none;
+  box-sizing: border-box;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  background: url("/img/header-illsutration-mobile.png") no-repeat;
-  background-size: cover;
+  background: #fff;
+  margin-top: -2.5rem;
+}
+
+#header-welcome {
+  background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
+  background-size: contain;
   padding: 0 1.5rem;
+  height: 700px;
 }
 
 hgroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 h1 {
+  margin-top: 0;
   color: #172b4d;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 #greentext {
@@ -43,11 +79,16 @@ h1 {
 }
 
 #more-text {
-  text-align: center;
   font-size: 1.2rem;
   line-height: 28px;
-  color: #182b4d;
+  color: #172b4d;
+  margin-top: 1rem;
   margin-bottom: 0.4rem;
+  font-weight: 400;
+}
+
+#more-text p {
+  margin: 0;
 }
 
 .icons {
@@ -77,19 +118,148 @@ h1 {
 }
 
 #icons {
-  padding: 0 2.2rem;
+  margin-top: 1.9rem;
 }
 
 #icons ul {
   padding: 0 2.2rem;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex: 1;
-  margin-top: 2rem;
 }
 
 #icons li {
   list-style: none;
+  margin: 0 0.5rem 0.8rem;
+}
+
+#toggle-down {
+  display: block;
+  height: 45px;
+  width: 45px;
+}
+
+#down-toggle {
+  margin-top: 2.4rem;
+  background: url("img/Disabled.png") no-repeat;
+}
+
+.section-header {
+  font-size: 2.6rem;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  margin: 0;
+}
+
+#green-line {
+  background-color: #36b37e;
+  width: 48px;
+  height: 4px;
+  border-radius: 24px;
+  margin-top: 1.25rem;
+  margin-bottom: 2.7rem;
+}
+
+#card-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  background: #ebf0ee;
+}
+
+.card-photo {
+  width: 327px;
+  height: 222px;
+  min-width: 100%;
+  max-width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-desc {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 32px;
+  color: #3a4a42;
+}
+
+.card-header h3 {
+  margin: 0.8rem 0;
+}
+
+.card-lang {
+  margin-left: 0.4rem;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+}
+
+.card-list-element {
+  list-style: none;
+  background: #ebf0ee;
+  border-radius: 4px;
+  letter-spacing: 0.03rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin: 0 0.3rem;
+  color: #3a4a42;
+}
+
+.card-button {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  padding: 0.7rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+#about-me {
+  margin-top: 2rem;
+  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
+  background-size: cover, 68px;
+}
+
+#about-me h2 {
+  margin-top: 2rem;
+}
+
+#about-me p {
+  padding: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 32px;
+  font-weight: 400;
+  color: #42526e;
+  margin: 0.3rem 0;
+}
+
+.btn-resume {
+  margin-top: -0.2rem;
+}
+
+.g-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.g-btn:active {
+  background-color: #008552;
 }
