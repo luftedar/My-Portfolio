@@ -81,7 +81,8 @@ h1 {
 #more-text {
   font-size: 1.2rem;
   line-height: 28px;
-  color: #182b4d;
+  color: #172b4d;
+  margin-top: 1rem;
   margin-bottom: 0.4rem;
   font-weight: 400;
 }
@@ -147,7 +148,7 @@ h1 {
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
-  margin: 2rem 0 0 0;
+  margin: 0;
 }
 
 #green-line {
@@ -155,11 +156,12 @@ h1 {
   width: 48px;
   height: 4px;
   border-radius: 24px;
-  margin-top: 1.4rem;
-  margin-bottom: 3rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.7rem;
 }
 
 #card-grid {
+  margin-top: 1rem;
   display: grid;
   grid-gap: 2rem;
   justify-content: center;
@@ -168,7 +170,7 @@ h1 {
 .card {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  background: #ebf0eb;
+  background: #ebf0ee;
 }
 
 .card-photo {
@@ -197,6 +199,10 @@ h1 {
   margin: 0.8rem 0;
 }
 
+.card-lang {
+  margin-left: 0.4rem;
+}
+
 .card-list {
   margin: 0;
   padding: 0;
@@ -215,7 +221,7 @@ h1 {
 }
 
 .card-button {
-  background: #36b37e;
+  background: #36b37f;
   border-radius: 4px;
   border: none;
   padding: 0.7rem;
@@ -233,12 +239,16 @@ h1 {
   background-size: cover, 68px;
 }
 
+#about-me h2 {
+  margin-top: 2rem;
+}
+
 #about-me p {
   padding: 1.1rem;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   line-height: 32px;
   font-weight: 400;
-  color: #35383d;
+  color: #42526e;
   margin: 0.3rem 0;
 }
 
@@ -247,7 +257,6 @@ h1 {
 }
 
 .g-btn:hover {
-  background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
