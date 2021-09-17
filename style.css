@@ -167,7 +167,7 @@ h1 {
 
 #card-grid {
   display: grid;
-  grid-gap:  2rem;
+  grid-gap: 2rem;
   justify-content: center;
 }
 
@@ -199,7 +199,7 @@ h1 {
   color: #3a4a42;
 }
 
-.card-header h3{
+.card-header h3 {
   margin: 0.8rem 0;
 }
 
@@ -261,4 +261,3 @@ h1 {
 .g-btn:active {
   background-color: #008552;
 }
-
