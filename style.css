@@ -1,5 +1,18 @@
 * {
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.t-center {
+  text-align: center;
 }
 
 body {
@@ -8,6 +21,13 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   padding: 0 1.5rem;
@@ -21,6 +41,9 @@ header {
 
 #welcome-text {
   color: #28352f;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 24px;
 }
 
 #toggle-menu {
@@ -30,26 +53,20 @@ header {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   background: #fff;
+  margin-top: -2.5rem;
 }
 
-#welcome-section {
+#header-welcome {
   background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
   background-size: contain;
   padding: 0 1.5rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   height: 700px;
 }
 
 hgroup {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
   margin-top: 2rem;
   font-size: 1.7rem;
 }
@@ -64,11 +81,14 @@ h1 {
 }
 
 #more-text {
-  text-align: center;
   font-size: 1.2rem;
   line-height: 28px;
   color: #182b4d;
   margin-bottom: 0.4rem;
+}
+
+#more-text p {
+  margin: 0;
 }
 
 .icons {
@@ -98,13 +118,11 @@ h1 {
 }
 
 #icons {
-  margin-top: 1rem;
+  margin-top: 1.9rem;
 }
 
 #icons ul {
   padding: 0 2.2rem;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex: 1;
@@ -127,15 +145,12 @@ h1 {
 }
 
 #projects-div {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .section-header {
   font-size: 2.6rem;
   line-height: 52px;
-  text-align: center;
   font-weight: 700;
   color: #172b4d;
   margin: 2rem 0 0 0;
@@ -150,22 +165,16 @@ h1 {
   margin-bottom: 3rem;
 }
 
-#projects-cards {
-  padding: 0 1rem;
-}
-
 #card-grid {
   display: grid;
-  grid-area: 1/1/2/2;
+  grid-gap:  2rem;
+  justify-content: center;
 }
 
 .card {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
   background: #ebf0eb;
-  margin: 1.5rem 0 0 0;
 }
 
 .card-photo {
@@ -178,8 +187,6 @@ h1 {
 }
 
 .card-desc {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background: #fff;
   border-radius: 8px;
@@ -187,17 +194,18 @@ h1 {
 
 .card-header {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 32px;
   color: #3a4a42;
-  text-align: center;
+}
+
+.card-header h3{
+  margin: 0.8rem 0;
 }
 
 .card-list {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding-left: 0;
-  margin: -0.3rem -4rem 0 -4rem;
+  margin: 0;
+  padding: 0;
 }
 
 .card-list-element {
@@ -208,7 +216,7 @@ h1 {
   padding: 0.5rem 0.7rem;
   font-size: 0.65rem;
   font-weight: 600;
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
   color: #3a4a42;
 }
 
@@ -216,9 +224,9 @@ h1 {
   background: #36b37e;
   border-radius: 4px;
   border: none;
-  padding: 0.8rem;
+  padding: 0.7rem;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 24px;
   margin-top: 1.5rem;
@@ -226,23 +234,31 @@ h1 {
 }
 
 #about-me {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-top: 4rem;
-  background: url("img/about-me-background-img.png") top -10px left no-repeat, url("img/about-me-2.png") top -30px right -5px no-repeat;
+  margin-top: 2rem;
+  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
   background-size: cover, 68px;
 }
 
 #about-me p {
   padding: 1.1rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 32px;
   font-weight: 400;
-  color: #42526e;
+  color: #35383d;
+  margin: 0.3rem 0;
 }
 
 .btn-resume {
-  margin-top: -1rem;
+  margin-top: -0.2rem;
 }
+
+.g-btn:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px  16px rgba(54, 179, 127, 0.24);
+}
+
+.g-btn:active {
+  background-color: #008552;
+}
+
