@@ -183,6 +183,7 @@ h1 {
 .card-desc {
   background: #fff;
   border-radius: 8px;
+  width: 100%;
 }
 
 .card-header {
