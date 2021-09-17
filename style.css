@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.d-center {
+  align-items: center;
+  justify-content: center;
+}
+
 .t-center {
   text-align: center;
 }
@@ -61,17 +66,15 @@ main {
   background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
   background-size: contain;
   padding: 0 1.5rem;
-  align-items: center;
   height: 700px;
 }
 
 hgroup {
-  justify-content: center;
-  margin-top: 2rem;
   font-size: 1.7rem;
 }
 
 h1 {
+  margin-top: 0;
   color: #172b4d;
   font-weight: bolder;
 }
@@ -124,7 +127,6 @@ h1 {
 #icons ul {
   padding: 0 2.2rem;
   justify-content: space-around;
-  align-items: center;
   flex: 1;
 }
 
@@ -142,10 +144,6 @@ h1 {
 #down-toggle {
   margin-top: 2.4rem;
   background: url("img/Disabled.png") no-repeat;
-}
-
-#projects-div {
-  align-items: center;
 }
 
 .section-header {
@@ -187,7 +185,6 @@ h1 {
 }
 
 .card-desc {
-  align-items: center;
   background: #fff;
   border-radius: 8px;
 }
@@ -234,7 +231,6 @@ h1 {
 }
 
 #about-me {
-  align-items: center;
   margin-top: 2rem;
   background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
   background-size: cover, 68px;
