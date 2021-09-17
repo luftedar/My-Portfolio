@@ -24,14 +24,10 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
   background: #fff;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   padding: 0 1.5rem;
@@ -69,13 +65,13 @@ main {
 }
 
 hgroup {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }
 
 h1 {
   margin-top: 0;
   color: #172b4d;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 #greentext {
@@ -87,6 +83,7 @@ h1 {
   line-height: 28px;
   color: #182b4d;
   margin-bottom: 0.4rem;
+  font-weight: 400;
 }
 
 #more-text p {
