@@ -218,6 +218,7 @@ h1 {
   font-weight: 600;
   margin: 0 0.3rem;
   color: #3a4a42;
+  float: left;
 }
 
 .card-button {
