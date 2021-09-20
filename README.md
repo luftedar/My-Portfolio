@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portoflio
+# My Portfolio
 
 > My first HTML & CSS project in Microverse.
 
