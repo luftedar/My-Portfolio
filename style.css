@@ -235,8 +235,7 @@ h1 {
 
 #about-me {
   margin-top: 2rem;
-  background: url("img/about-me-background-img.png") top -18px left no-repeat,
-    url("img/about-me-2.png") top -20px right -5px no-repeat;
+  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
   background-size: cover, 68px;
 }
 
@@ -266,13 +265,18 @@ h1 {
 }
 
 #feature {
-  min-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 2rem;
 }
 
 .lang-card {
   background-color: #ebf0ee;
   border: 1px solid #c1c8d0;
   border-radius: 8px;
+  width: 327px;
+  height: 352px;
 }
 
 .feature-icon {
@@ -283,34 +287,34 @@ h1 {
 
 #lang-card-icon {
   background: url("img/icon-languages.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #frameworks-card-icon {
   background: url("img/icon-frameworks.svg") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #skills-card-icon {
   background: url("img/icon-skills.svg") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .lang-card-specs > ul {
-  padding: 0;
+  padding: 0.7rem;
   flex-direction: row;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .lang-card-specs li {
   background-color: #fff;
   border-radius: 8px;
   color: #36b37e;
-  line-height: 16px;
   font-size: 0.7rem;
   font-weight: 600;
-  padding: 0.6rem;
-  margin: 0 0.1rem;
+  padding: 0.8rem;
+  margin: 0.3rem;
 }
 
 .o-1 {
@@ -323,6 +327,10 @@ h1 {
 
 .o-2 {
   order: 2;
+}
+
+.o-3 {
+  order: 3;
 }
 
 .about-me-intro {
@@ -365,4 +373,27 @@ h1 {
 .btn-gettouch {
   width: 129px;
   margin: 0 auto;
+}
+
+.feature-header {
+  color: #344563;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#footer-email {
+  color: #42526e;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.footer-icons {
+  margin-top: 2.5rem;
+}
+
+footer {
+  background: url("img/Frame.png") bottom 50px right no-repeat;
+  background-size: 15%;
 }
