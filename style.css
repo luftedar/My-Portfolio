@@ -97,37 +97,37 @@ h1 {
   width: 20px;
 }
 
-#icon1 {
+.icon1 {
   background: url("img/twitter.png")  no-repeat;
 }
 
-#icon2 {
+.icon2 {
   background: url("img/Linkedin\ icon.png") no-repeat;
 }
 
-#icon3 {
+.icon3 {
   background: url("img/medium.png") 70% no-repeat;
 }
 
-#icon4 {
+.icon4 {
   background: url("img/github.png")  no-repeat;
 }
 
-#icon5 {
+.icon5 {
   background: url("img/angellist.png")  no-repeat;
 }
 
-#icons {
+.social-icons {
   margin-top: 1.9rem;
 }
 
-#icons ul {
+.social-icons ul {
   padding: 0 2.2rem;
   justify-content: space-around;
   flex: 1;
 }
 
-#icons li {
+.d-flex li {
   list-style: none;
   margin: 0 0.5rem 0.8rem;
 }
