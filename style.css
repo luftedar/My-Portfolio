@@ -263,3 +263,64 @@ h1 {
 .g-btn:active {
   background-color: #008552;
 }
+
+#feature {
+  min-width: 100%;
+}
+
+.lang-card {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c8d0;
+  border-radius: 8px;
+}
+
+.feature-icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+#lang-card-icon {
+  background: url("img/icon-languages.png") no-repeat;
+  background-size: cover;
+}
+
+#frameworks-card-icon {
+  background: url("img/icon-frameworks.svg") no-repeat;
+  background-size: cover;
+}
+
+#skills-card-icon {
+  background: url("img/icon-skills.svg") no-repeat;
+  background-size: cover;
+}
+
+.lang-card-specs ul {
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.lang-card-specs li {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #36b37e;
+  line-height: 16px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  flex: none;
+  flex-grow: 0;
+  margin: 0 0.1rem;
+}
+
+.o-1 {
+  order: 1;
+}
+
+.o-0 {
+  order: 0;
+}
+
+.o-2 {
+  order: 2;
+}
