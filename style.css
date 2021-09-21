@@ -1,5 +1,5 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .d-flex {
@@ -98,7 +98,7 @@ h1 {
 }
 
 .icon1 {
-  background: url("img/twitter.png")  no-repeat;
+  background: url("img/twitter.png") no-repeat;
 }
 
 .icon2 {
@@ -110,11 +110,11 @@ h1 {
 }
 
 .icon4 {
-  background: url("img/github.png")  no-repeat;
+  background: url("img/github.png") no-repeat;
 }
 
 .icon5 {
-  background: url("img/angellist.png")  no-repeat;
+  background: url("img/angellist.png") no-repeat;
 }
 
 .social-icons {
@@ -235,7 +235,8 @@ h1 {
 
 #about-me {
   margin-top: 2rem;
-  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
+  background: url("img/about-me-background-img.png") top -18px left no-repeat,
+    url("img/about-me-2.png") top -20px right -5px no-repeat;
   background-size: cover, 68px;
 }
 
@@ -322,4 +323,46 @@ h1 {
 
 .o-2 {
   order: 2;
+}
+
+.about-me-intro {
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: #172b4d;
+  font-weight: 700;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.form-input {
+  height: 48px;
+  border: 1px solid #d0d9d4;
+  margin-bottom: 20px;
+  padding: 0 8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.form-textarea {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.btn-gettouch {
+  width: 129px;
+  margin: 0 auto;
 }
