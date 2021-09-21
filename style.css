@@ -295,9 +295,10 @@ h1 {
   background-size: cover;
 }
 
-.lang-card-specs ul {
+.lang-card-specs > ul {
   padding: 0;
-  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
 }
 
 .lang-card-specs li {
@@ -308,8 +309,6 @@ h1 {
   font-size: 0.7rem;
   font-weight: 600;
   padding: 0.6rem;
-  flex: none;
-  flex-grow: 0;
   margin: 0 0.1rem;
 }
 
