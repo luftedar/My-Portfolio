@@ -2,6 +2,10 @@
   font-family: "Inter", sans-serif;
 }
 
+#big-nav {
+  display: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -396,4 +400,50 @@ h1 {
 footer {
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  #welcome-text {
+    display: none;
+  }
+
+  #toggle-menu {
+    display: none;
+  }
+
+  #header-welcome {
+    background: none;
+  }
+
+  header {
+    margin: 0;
+    background: url("img/Big-main.png") top no-repeat;
+    background-size: cover;
+    height: 1140px;
+    align-items: center;
+  }
+
+  #big-nav {
+    display: flex;
+    padding-left: 0;
+  }
+
+  #big-nav li {
+    color: #172b4d;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  #more-text {
+    width: 20vh;
+  }
+
+  .bnn {
+    display: none;
+  }
 }
