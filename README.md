@@ -6,7 +6,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid.
+In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid. Media queries have been used for responsive design.
 
 ## Built With
 
