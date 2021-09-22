@@ -43,6 +43,11 @@ nav {
   text-decoration: none;
 }
 
+#welcome-section {
+  align-items: center;
+  justify-content: center;
+}
+
 #welcome-text {
   color: #28352f;
   font-weight: 600;
@@ -445,5 +450,20 @@ footer {
 
   .bnn {
     display: none;
+  }
+
+  #welcome-section {
+    justify-content: initial;
+    align-items: initial;
+  }
+
+  #card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(439px, 1fr));
+    grid-gap: 2rem 1.25rem;
+  }
+
+  main {
+    margin: 7rem;
   }
 }
