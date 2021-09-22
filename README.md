@@ -6,16 +6,17 @@
 
 ![screenshot](./app_screenshot.png)
 
-In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid. This project is for mobile devices.
+In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid.
 
 ## Built With
 
 - HTML & CSS
+- Media Queries
 - GitHub Workflows, Figma, Browser Developer Tools.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/luftedar/My-Portoflio/forms-ux/index.html)
+[Live Demo Link](https://raw.githack.com/luftedar/My-Portoflio/desktop-version/index.html)
 
 
 ## Getting Started
