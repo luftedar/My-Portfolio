@@ -32,7 +32,9 @@ body {
 }
 
 header {
-  background: #fff;
+  background: url("/img/header-illsutration-mobile.png") center center no-repeat;
+  background-size: cover;
+  height: 900px;
 }
 
 nav {
@@ -71,8 +73,6 @@ main {
 }
 
 #header-welcome {
-  background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
-  background-size: contain;
   padding: 0 1.5rem;
   height: 700px;
 }
@@ -161,7 +161,6 @@ h1 {
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
-  margin: 0;
 }
 
 #green-line {
