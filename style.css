@@ -2,6 +2,10 @@
   font-family: "Inter", sans-serif;
 }
 
+hr {
+  display: none;
+}
+
 #big-nav {
   display: none;
 }
@@ -244,8 +248,6 @@ h1 {
 
 #about-me {
   margin-top: 2rem;
-  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
-  background-size: cover, 68px;
 }
 
 #about-me h2 {
@@ -403,13 +405,39 @@ h1 {
 }
 
 footer {
+  align-self: center;
+  justify-content: center;
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  #header-welcome {
+    background: none;
+  }
+
+  .footer-icons ul {
+    justify-content: center;
+  }
+
+  footer {
+    background-size: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #more-text {
+    width: 60%;
+  }
+
   body {
     margin: 0;
+    width: 100vw;
   }
 
   #welcome-text {
@@ -426,7 +454,7 @@ footer {
 
   header {
     margin: 0;
-    background: url("img/Big-main.png") top no-repeat;
+    background: url("img/Big-main.png") center center no-repeat;
     background-size: cover;
     height: 1140px;
     align-items: center;
@@ -444,10 +472,6 @@ footer {
     margin: 0.5rem 0.5rem;
   }
 
-  #more-text {
-    width: 20vh;
-  }
-
   .bnn {
     display: none;
   }
@@ -455,15 +479,98 @@ footer {
   #welcome-section {
     justify-content: initial;
     align-items: initial;
+    margin-top: 12rem;
   }
 
   #card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(439px, 1fr));
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, minmax(439px, 2fr));
     grid-gap: 2rem 1.25rem;
+    margin: 1rem 7rem;
   }
 
-  main {
-    margin: 7rem;
+  #about-me {
+    background: url("img/big-about-me-1.png") top 90px left no-repeat, url("img/big-about-me-2.png") bottom 10px right no-repeat;
+    background-size: 15%, contain;
+  }
+
+  #about-me p {
+    font-size: 1.22rem;
+    width: 60%;
+  }
+
+  #feature {
+    display: flex;
+  }
+
+  .lang-card {
+    width: 369px;
+    height: 352px;
+    position: relative;
+  }
+
+  .feature-icon {
+    position: absolute;
+    bottom: 240px;
+  }
+
+  .feature-header {
+    position: absolute;
+  }
+
+  .lang-card-specs ul {
+    position: relative;
+    top: 63px;
+  }
+
+  .lang-card-2-specs ul {
+    top: 86px;
+  }
+
+  footer section:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8.5rem;
+    text-align: initial;
+    background: url("img/footer-left.png") left bottom 75px no-repeat, url("img/illustration-2-contact-form-desktop@2x.png") left 275px bottom 130px no-repeat, url("img/Frame@2x.png") bottom right no-repeat;
+    background-size: 150px auto, 100px, 150px;
+  }
+
+  footer section:nth-child(1) h4 {
+    flex: 1.5;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 52px;
+    margin: 1rem;
+  }
+
+  footer section:nth-child(1) form {
+    flex: 2;
+  }
+
+  #footer-email {
+    display: none;
+  }
+
+  hr {
+    display: block;
+    width: 100vw;
+    border: 1px solid #dfe1e6;
+  }
+
+  footer {
+    background: none;
+  }
+
+  footer section:nth-child(2) ul {
+    justify-content: center;
+  }
+
+  .btn-gettouch {
+    margin: 0;
   }
 }
+
+/* 1736 */
