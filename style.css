@@ -430,7 +430,27 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+    height: 1150px;
+  }
+
+  #header-welcome {
+    margin-top: 10rem;
+  }
+
+  #more-text {
+    margin-top: 5rem;
+  }
+
+  #header-welcome .social-icons {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
   #more-text {
     width: 60%;
   }
@@ -483,7 +503,7 @@ footer {
   }
 
   #card-grid {
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
     grid-template-rows: repeat(2, minmax(439px, 2fr));
     grid-gap: 2rem 1.25rem;
     margin: 1rem 7rem;
@@ -501,6 +521,8 @@ footer {
 
   #feature {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .lang-card {
@@ -570,6 +592,19 @@ footer {
 
   .btn-gettouch {
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #card-grid {
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, minmax(439px, 2fr));
+    grid-gap: 2rem 1.25rem;
+    margin: 1rem 7rem;
+  }
+
+  #feature {
+    display: flex;
   }
 }
 
