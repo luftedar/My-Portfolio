@@ -32,8 +32,8 @@ body {
 }
 
 header {
-  background: url("img/header-illsutration-mobile.png") center center no-repeat;
-  background-size: contain;
+  background: url("/img/header-illsutration-mobile@2x.png") center center no-repeat;
+  background-size: cover;
   height: 900px;
 }
 
@@ -456,7 +456,6 @@ footer {
 
   body {
     margin: 0;
-    width: 100vw;
   }
 
   #welcome-text {
@@ -577,7 +576,8 @@ footer {
 
   hr {
     display: block;
-    width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
     border: 1px solid #dfe1e6;
   }
 

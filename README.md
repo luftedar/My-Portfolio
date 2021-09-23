@@ -16,7 +16,7 @@ In this project, forms and semantic HTML5 tags used while positioning for CSS ma
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/luftedar/My-Portoflio/desktop-version/index.html)
+[Live Demo Link](https://luftedar.github.io/My-Portfolio/)
 
 
 ## Getting Started
