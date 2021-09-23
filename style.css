@@ -33,7 +33,7 @@ body {
 
 header {
   background: url("img/header-illsutration-mobile.png") center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 900px;
 }
 
@@ -408,6 +408,13 @@ footer {
   justify-content: center;
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
+}
+
+@media (min-width: 520px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 600px) {
