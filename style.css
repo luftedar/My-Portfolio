@@ -32,8 +32,8 @@ body {
 }
 
 header {
-  background: url("img/moblie-header.png") center center no-repeat;
-  background-size: cover;
+  background: url("img/header-illsutration-mobile.png") center center no-repeat;
+  background-size: contain;
   height: 900px;
 }
 
