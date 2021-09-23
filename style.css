@@ -478,6 +478,17 @@ footer {
     align-items: center;
   }
 
+  .d-flex li {
+    margin: 0;
+    margin-right: 0.2rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons li {
+    margin: 0 0.5rem 0.8rem;
+  }
+
   #big-nav {
     display: flex;
     padding-left: 0;
@@ -501,10 +512,14 @@ footer {
   }
 
   #card-grid {
-    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
     grid-template-rows: repeat(2, minmax(439px, 2fr));
-    grid-gap: 2rem 1.25rem;
-    margin: 1rem 7rem;
+    grid-gap: 2rem 0.5rem;
+    margin: 1rem 1rem;
+  }
+
+  .card-lang {
+    margin: 0;
   }
 
   #about-me {
@@ -519,12 +534,12 @@ footer {
 
   #feature {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: stretch;
+    max-width: 90%;
   }
 
   .lang-card {
-    width: 369px;
+    width: 320px;
     height: 352px;
     position: relative;
   }
@@ -541,6 +556,7 @@ footer {
   .lang-card-specs ul {
     position: relative;
     top: 63px;
+    padding: 0;
   }
 
   .lang-card-2-specs ul {
@@ -604,5 +620,9 @@ footer {
 
   #feature {
     display: flex;
+  }
+
+  .d-flex li {
+    margin: 0 0.5rem 0.8rem;
   }
 }
