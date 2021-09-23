@@ -32,7 +32,7 @@ body {
 }
 
 header {
-  background: url("/img/header-illsutration-mobile.png") center center no-repeat;
+  background: url("/img/header-illsutration-mobile@2x.png") center center no-repeat;
   background-size: cover;
   height: 900px;
 }
