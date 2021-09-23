@@ -2,6 +2,14 @@
   font-family: "Inter", sans-serif;
 }
 
+hr {
+  display: none;
+}
+
+#big-nav {
+  display: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -24,7 +32,9 @@ body {
 }
 
 header {
-  background: #fff;
+  background: url("img/header-illsutration-mobile.png") center center no-repeat;
+  background-size: contain;
+  height: 900px;
 }
 
 nav {
@@ -37,6 +47,11 @@ nav {
 
 #welcome-link {
   text-decoration: none;
+}
+
+#welcome-section {
+  align-items: center;
+  justify-content: center;
 }
 
 #welcome-text {
@@ -58,8 +73,6 @@ main {
 }
 
 #header-welcome {
-  background: url("/img/header-illsutration-mobile.png") top -10px right no-repeat;
-  background-size: contain;
   padding: 0 1.5rem;
   height: 700px;
 }
@@ -148,7 +161,6 @@ h1 {
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
-  margin: 0;
 }
 
 #green-line {
@@ -235,8 +247,6 @@ h1 {
 
 #about-me {
   margin-top: 2rem;
-  background: url("img/about-me-background-img.png") top -18px left no-repeat, url("img/about-me-2.png") top -20px right -5px no-repeat;
-  background-size: cover, 68px;
 }
 
 #about-me h2 {
@@ -394,6 +404,232 @@ h1 {
 }
 
 footer {
+  align-self: center;
+  justify-content: center;
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
+}
+
+@media (min-width: 520px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  #header-welcome {
+    background: none;
+  }
+
+  .footer-icons ul {
+    justify-content: center;
+  }
+
+  footer {
+    background-size: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    background: url("img/header-illsutration-mobile.png") center center no-repeat;
+    background-size: cover;
+    height: 1150px;
+  }
+
+  #header-welcome {
+    margin-top: 10rem;
+  }
+
+  #more-text {
+    margin-top: 5rem;
+  }
+
+  #header-welcome .social-icons {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #more-text {
+    width: 60%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #welcome-text {
+    display: none;
+  }
+
+  #toggle-menu {
+    display: none;
+  }
+
+  #header-welcome {
+    background: none;
+  }
+
+  header {
+    margin: 0;
+    background: url("img/Big-main.png") center center no-repeat;
+    background-size: cover;
+    height: 1140px;
+    align-items: center;
+  }
+
+  .d-flex li {
+    margin: 0;
+    margin-right: 0.2rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons li {
+    margin: 0 0.5rem 0.8rem;
+  }
+
+  #big-nav {
+    display: flex;
+    padding-left: 0;
+  }
+
+  #big-nav li {
+    color: #172b4d;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .bnn {
+    display: none;
+  }
+
+  #welcome-section {
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 12rem;
+  }
+
+  #card-grid {
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-template-rows: repeat(2, minmax(439px, 2fr));
+    grid-gap: 2rem 0.5rem;
+    margin: 1rem 1rem;
+  }
+
+  .card-lang {
+    margin: 0;
+  }
+
+  #about-me {
+    background: url("img/big-about-me-1.png") top 90px left no-repeat, url("img/big-about-me-2.png") bottom 10px right no-repeat;
+    background-size: 15%, contain;
+  }
+
+  #about-me p {
+    font-size: 1.22rem;
+    width: 60%;
+  }
+
+  #feature {
+    display: flex;
+    justify-content: stretch;
+    max-width: 90%;
+  }
+
+  .lang-card {
+    width: 320px;
+    height: 352px;
+    position: relative;
+  }
+
+  .feature-icon {
+    position: absolute;
+    bottom: 240px;
+  }
+
+  .feature-header {
+    position: absolute;
+  }
+
+  .lang-card-specs ul {
+    position: relative;
+    top: 63px;
+    padding: 0;
+  }
+
+  .lang-card-2-specs ul {
+    top: 86px;
+  }
+
+  footer section:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8.5rem;
+    text-align: initial;
+    background: url("img/footer-left.png") left bottom 75px no-repeat, url("img/illustration-2-contact-form-desktop@2x.png") left 275px bottom 130px no-repeat, url("img/Frame@2x.png") bottom right no-repeat;
+    background-size: 150px auto, 100px, 150px;
+  }
+
+  footer section:nth-child(1) h4 {
+    flex: 1.5;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 52px;
+    margin: 1rem;
+  }
+
+  footer section:nth-child(1) form {
+    flex: 2;
+  }
+
+  #footer-email {
+    display: none;
+  }
+
+  hr {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #dfe1e6;
+  }
+
+  footer {
+    background: none;
+  }
+
+  footer section:nth-child(2) ul {
+    justify-content: center;
+  }
+
+  .btn-gettouch {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #card-grid {
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, minmax(439px, 2fr));
+    grid-gap: 2rem 1.25rem;
+    margin: 1rem 7rem;
+  }
+
+  #feature {
+    display: flex;
+  }
+
+  .d-flex li {
+    margin: 0 0.5rem 0.8rem;
+  }
 }
