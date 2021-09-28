@@ -600,7 +600,7 @@ footer {
     background-size: 150px auto, 100px, 150px;
   }
 
-  footer section:nth-child(1) h4 {
+  footer section:nth-child(1) h2 {
     flex: 1.5;
     padding: 2rem 0;
     font-size: 1.6rem;
