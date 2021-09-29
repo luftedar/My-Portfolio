@@ -6,6 +6,9 @@
   line-height: 0;
   font-size: 0;
   color: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 hr {
@@ -114,12 +117,6 @@ h1 {
 
 #more-text p {
   margin: 0;
-}
-
-.icons {
-  display: block;
-  height: 20px;
-  width: 20px;
 }
 
 .icon1 {
