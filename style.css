@@ -22,6 +22,7 @@
 
 #small-nav {
   margin: 0;
+  margin-left: 1rem;
   padding: 1rem 1rem;
   font-weight: 600;
 }
@@ -33,7 +34,8 @@
 }
 
 .close {
-  padding: 1rem 1rem;
+  padding: 1.5rem 0.5rem;
+  margin-right: 1rem;
   display: flex;
   justify-content: end;
 }
@@ -42,6 +44,7 @@
   align-items: end;
   text-decoration: none;
   color: #67798e;
+  font-size: 1.7rem;
 }
 
 .icons {

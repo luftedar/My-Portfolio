@@ -41,7 +41,7 @@ Open folder with code editor
 
 ## Authors
 
-👤 **Author1**
+👤 **Orçun Uğur**
 
 - GitHub: [@githubhandle](https://github.com/luftedar)
 - Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)
