@@ -2,6 +2,39 @@
   font-family: "Inter", sans-serif;
 }
 
+.display-none {
+  display: none;
+}
+
+.mobile-menu {
+  padding: 1rem 1rem;
+}
+
+#small-nav {
+  width: 100vw;
+  height: 755px;
+  margin: 0;
+  padding: 1rem 1rem;
+  font-weight: 600;
+}
+
+#small-nav a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 1.9rem;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+}
+
+#toggle-x {
+  align-items: end;
+  text-decoration: none;
+  color: #67798e;
+}
+
 .icons {
   line-height: 0;
   font-size: 0;
