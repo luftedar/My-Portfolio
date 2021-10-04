@@ -567,10 +567,14 @@ footer {
   }
 
   #big-nav li {
-    color: #172b4d;
     font-weight: 500;
     font-size: 0.9rem;
     margin: 0.5rem 0.5rem;
+  }
+
+  #big-nav li a {
+    text-decoration: none;
+    color: #172b4d;
   }
 
   .bnn {
