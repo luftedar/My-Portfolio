@@ -16,6 +16,10 @@
   z-index: 3;
 }
 
+.humburger-btn {
+  cursor: pointer;
+}
+
 #small-nav {
   margin: 0;
   padding: 1rem 1rem;
