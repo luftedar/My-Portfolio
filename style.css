@@ -7,12 +7,16 @@
 }
 
 .mobile-menu {
-  padding: 1rem 1rem;
+  padding: 0 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: white;
+  z-index: 3;
 }
 
 #small-nav {
-  width: 100vw;
-  height: 755px;
   margin: 0;
   padding: 1rem 1rem;
   font-weight: 600;
@@ -25,6 +29,7 @@
 }
 
 .close {
+  padding: 1rem 1rem;
   display: flex;
   justify-content: end;
 }
@@ -54,6 +59,7 @@ hr {
 
 .d-flex {
   display: flex;
+  position: relative;
 }
 
 .d-flex-column {
