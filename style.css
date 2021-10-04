@@ -2,6 +2,51 @@
   font-family: "Inter", sans-serif;
 }
 
+.display-none {
+  display: none;
+}
+
+.mobile-menu {
+  padding: 0 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+}
+
+.humburger-btn {
+  cursor: pointer;
+}
+
+#small-nav {
+  margin: 0;
+  margin-left: 1rem;
+  padding: 1rem 1rem;
+  font-weight: 600;
+}
+
+#small-nav a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 1.9rem;
+}
+
+.close {
+  padding: 1.5rem 0.5rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: end;
+}
+
+#toggle-x {
+  align-items: end;
+  text-decoration: none;
+  color: #67798e;
+  font-size: 1.7rem;
+}
+
 .icons {
   line-height: 0;
   font-size: 0;
@@ -21,6 +66,7 @@ hr {
 
 .d-flex {
   display: flex;
+  position: relative;
 }
 
 .d-flex-column {
@@ -528,10 +574,14 @@ footer {
   }
 
   #big-nav li {
-    color: #172b4d;
     font-weight: 500;
     font-size: 0.9rem;
     margin: 0.5rem 0.5rem;
+  }
+
+  #big-nav li a {
+    text-decoration: none;
+    color: #172b4d;
   }
 
   .bnn {

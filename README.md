@@ -2,15 +2,16 @@
 
 # My Portfolio
 
-> My first HTML & CSS project in Microverse.
+> My first HTML&CSS&JavaScript project in Microverse.
 
 ![screenshot](./app_screenshot.png)
 
-In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid. Media queries have been used for responsive design.
+In this project, forms and semantic HTML5 tags used while positioning for CSS made by using Flexboxes and Grid. Media queries have been used for responsive design. DOM used for mobile menu.
 
 ## Built With
 
 - HTML & CSS
+- JavaScript
 - Media Queries
 - GitHub Workflows, Figma, Browser Developer Tools.
 
@@ -40,7 +41,7 @@ Open folder with code editor
 
 ## Authors
 
-👤 **Author1**
+👤 **Orçun Uğur**
 
 - GitHub: [@githubhandle](https://github.com/luftedar)
 - Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)

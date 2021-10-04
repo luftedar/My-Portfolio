@@ -8,7 +8,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){window.dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'GA_MEASUREMENT_ID');
   </script>
   <meta charset="UTF-8" />
@@ -23,16 +22,28 @@
 </head>
 <body>
   <header class="d-flex d-flex-column">
+    <nav class="mobile-menu display-none">
+      <div class="close">
+        <a href="#" id="toggle-x">x</a>
+      </div>
+      <div class="d-flex">
+        <ul id="small-nav">
+          <li><a href="#welcome-section">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <nav class="d-flex">
       <ul id="big-nav" class="t-center">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#welcome-section">Portfolio</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#contact-me">Contact</a></li>
       </ul>
       <a href="#" id="welcome-link">
         <p id="welcome-text">Welcome</p>
       </a>
-        <img src="img/Union.png" alt="" id="toggle-menu">
+        <a class="humburger-btn"><img src="img/Union.png" alt="Mobile Menu" id="toggle-menu"></a>
     </nav>
     <div id="header-welcome" class="d-flex d-flex-column t-center d-center">
       <hgroup>
@@ -240,7 +251,7 @@
     </section>
   </main>
   <footer class="d-flex d-flex-column">
-    <section>
+    <section id="contact-me">
       <h2 class="t-center about-me-intro">
         I'm always interested in hearing about new projects, so if you'd like
         to chat please get in touch.
@@ -280,6 +291,7 @@
       <p id="footer-email">ugurorcun91@gmail.com</p>
     </section>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
