@@ -105,12 +105,14 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             let mobileProjectPopupWindowCloseBtn = document.querySelector('#mobile-popup-container .mobile-popup-close-button');
 
             mobileProjectPopupWindowImage.src = projectsArr[i].mobileFeaturedImage;
+            mobileProjectPopupWindowDescription.style.cssText = "font-weight: 400;line-height: 30px;color: #344563;"
             mobileProjectPopupWindowName.textContent = projectsArr[i].mobileName;
             mobileProjectPopupWindowTechnologies.innerHTML = '';
             for (let j = 0; j<projectsArr[i].mobileTechnologies.length; j += 1)
             {
                 let technology =  document.createElement('li');
                 technology.textContent = projectsArr[i].mobileTechnologies[j];
+                technology.style.cssText += 'list-style: none;background: #ebf0ee;border-radius: 4px;letter-spacing: 0.03rem;padding: 0.5rem 0.7rem;font-size: 0.65rem;font-weight: 600;margin: 0 0.5rem 0 0;color: #3a4a42;'
                 mobileProjectPopupWindowTechnologies.appendChild(technology);
             }
             mobileProjectPopupWindowDescription.textContent = projectsArr[i].description;
