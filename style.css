@@ -807,6 +807,14 @@ footer {
     color: #172b4d;
   }
 
+  #desktop-buttons a {
+    text-decoration: none;
+  }
+
+  #desktop-buttons a:nth-child(1) {
+    margin-right: 1.5rem;
+  }
+
   #desktop-popup p {
     text-align: left;
     font-weight: 400;
