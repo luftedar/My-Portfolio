@@ -121,6 +121,7 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             mobileProjectPopupWindow.classList.remove('display-none');
             mobileProjectPopupWindowCloseBtn.addEventListener('click', () => {
                 mobileProjectPopupWindow.classList.add('display-none');
+                bodyScroll.style.overflow = 'auto';
             })
         }
         else 
@@ -151,6 +152,7 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             desktopProjectPopupWindow.classList.remove('display-none');
             desktopProjectPopupWindowCloseBtn.addEventListener("click", () => {
                 desktopProjectPopupWindow.classList.add('display-none');
+                bodyScroll.style.overflow = 'auto';
             });
         }
     });
