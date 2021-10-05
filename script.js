@@ -20,7 +20,8 @@ closeMenu.addEventListener('click', () => {
 
 let projectsArr = [
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -30,7 +31,8 @@ let projectsArr = [
         linkToSource: "#"
     },
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -40,7 +42,8 @@ let projectsArr = [
         linkToSource: "#"
     },
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -50,7 +53,8 @@ let projectsArr = [
         linkToSource: "#"
     },
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -60,7 +64,8 @@ let projectsArr = [
         linkToSource: "#"
     },
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -70,7 +75,8 @@ let projectsArr = [
         linkToSource: "#"
     },
     {
-        name: "Keeping track of hundreds of components",
+        mobileName: "Keeping track of hundreds of components",
+        desktopName: "Keeping track of hundreds of <br> components",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         mobileFeaturedImage: "img/MobilePopup.jpg",
         desktopFeaturedImage: "img/DesktopPopup.jpg",
@@ -96,7 +102,7 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             let mobileProjectPopupWindowSeeSource = document.querySelector("#mobile-popup-container #see-source");
 
             mobileProjectPopupWindowImage.src = projectsArr[i].mobileFeaturedImage;
-            mobileProjectPopupWindowName.textContent = projectsArr[i].name;
+            mobileProjectPopupWindowName.textContent = projectsArr[i].mobileName;
             mobileProjectPopupWindowTechnologies.innerHTML = '';
             for (let j = 0; j<projectsArr[i].mobileTechnologies.length; j += 1)
             {
@@ -121,12 +127,12 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             let desktopProjectPopupWindowCloseBtn = document.querySelector("#desktop-popup-container .desktop-popup-close-button");
 
             desktopProjectPopupWindowImage.src = projectsArr[i].desktopFeaturedImage;
-            desktopProjectPopupWindowName.textContent = projectsArr[i].name;
+            desktopProjectPopupWindowName.innerHTML = projectsArr[i].desktopName;
             desktopProjectPopupWindowTechnologies.innerHTML = '';
             for (let j = 0; j<projectsArr[i].desktopTechnologies.length; j += 1){
                 let technology =  document.createElement('li');
                 technology.textContent = projectsArr[i].desktopTechnologies[j];
-                technology.style.cssText += 'list-style: none;background: #ebf0ee;border-radius: 4px;letter-spacing: 0.03rem;padding: 0.5rem 0.7rem;font-size: 0.65rem;font-weight: 600;margin: 0 0.3rem;color: #3a4a42;'
+                technology.style.cssText += 'list-style: none;background: #ebf0ee;border-radius: 4px;letter-spacing: 0.03rem;padding: 0.5rem 0.7rem;font-size: 0.65rem;font-weight: 600;margin: 0 0 0 0.3rem;color: #3a4a42;'
                 desktopProjectPopupWindowTechnologies.appendChild(technology);
             }
 
