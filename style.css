@@ -748,4 +748,70 @@ footer {
   .d-flex li {
     margin: 0 0.5rem 0.8rem;
   }
+
+  #desktop-popup-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1c7d0;
+    opacity: 0.9;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+
+  #desktop-popup {
+    width: 920px;
+    height: 1083px;
+    max-width: 60%;
+    background-color: #fff;
+    top: 50%;
+    left: 20%;
+    padding: 1rem;
+    border: 1px solid #ebecf0;
+    border-radius: 8px;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  #desktop-popup-image {
+    max-width: 100%;
+  }
+
+  #desktop-popup .desktop-popup-close-button {
+    align-self: flex-end;
+    margin: 1rem 0;
+    border: none;
+    background-color: #ebecf0;
+    color: #67798e;
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #desktop-popup-header-container {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #desktop-popup-header-container h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #172b4d;
+  }
+
+  #desktop-popup p {
+    text-align: left;
+    font-weight: 400;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  #desktop-popup .card-lang ul {
+    margin: 0;
+  }
+
+  #desktop-popup .card-lang ul li {
+    margin: 0 0.7rem 1rem 0;
+  }
 }
