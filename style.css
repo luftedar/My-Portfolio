@@ -805,6 +805,7 @@ footer {
     font-size: 1.7rem;
     font-weight: 700;
     color: #172b4d;
+    padding: 0.8rem;
   }
 
   #desktop-buttons a {
@@ -817,9 +818,6 @@ footer {
 
   #desktop-popup p {
     text-align: left;
-    font-weight: 400;
-    line-height: 30px;
-    color: #344563;
   }
 
   #desktop-popup .card-lang ul {
