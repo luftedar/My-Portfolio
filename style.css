@@ -46,7 +46,6 @@ body {
   padding: 1.2rem 0.9rem 0 0.8rem;
   margin-bottom: 2rem;
   border-radius: 16px;
-  height: 836px;
 }
 
 #mobile-popup p {
@@ -112,9 +111,17 @@ body {
   font-weight: 600;
 }
 
-.mobile-menu-image-div {
+.pop-up-button img {
+  margin-left: 0.6rem;
+}
+
+#mobile-popup-image-div {
   position: relative;
   max-width: 100%;
+}
+
+#mobile-popup-image-div img {
+  width: 100%;
 }
 
 .mobile-popup-close-button {
@@ -122,8 +129,8 @@ body {
   color: #fff;
   background: none;
   position: absolute;
-  top: 43px;
-  right: 43px;
+  top: 5%;
+  right: 5%;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -406,10 +413,6 @@ h1 {
   filter: contrast(1.2);
 }
 
-.pop-up-button img {
-  margin-left: 0.6rem;
-}
-
 .other-button {
   background: #36b37f;
   border-radius: 4px;
@@ -597,9 +600,19 @@ footer {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
   }
+
+  .mobile-popup-close-button {
+    font-size: 3rem;
+    top: 2%;
+    right: 4%;
+  }
 }
 
 @media (min-width: 600px) {
+  .mobile-popup-close-button {
+    font-size: 4rem;
+  }
+
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
@@ -619,6 +632,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .mobile-popup-close-button {
+    top: 5%;
+    right: 5%;
+  }
+
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
