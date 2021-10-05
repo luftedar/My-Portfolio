@@ -2,6 +2,90 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  overflow: auto;
+  margin: 0.5rem 0;
+}
+
+.card-lang {
+  margin-left: 0.4rem;
+}
+
+.d-flex li {
+  list-style: none;
+  margin: 0 0.5rem 0.8rem;
+}
+
+.lang-card-specs li {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #36b37e;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  margin: 0.3rem;
+}
+
+#mobile-popup-container {
+  background-color: #c1c7d0;
+  margin: 0;
+  padding: 1.3rem 1.2rem;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: 100vh;
+  overflow: auto;
+}
+
+#mobile-popup {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  padding: 1.2rem 0.9rem 0 0.8rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+#mobile-popup p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 24px;
+  color: #344563;
+}
+
+.pop-up-button a:nth-child(1) {
+  min-width: 141px;
+}
+
+.pop-up-button a:nth-child(2) {
+  min-width: 158px;
+}
+
+#mobile-popup-buttons {
+  justify-content: space-between;
+}
+
+#mobile-popup-buttons a {
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+}
+
+#mobile-popup .card-lang {
+  margin: 0;
+}
+
+#mobile-popup ul li {
+  justify-content: flex-start;
+  margin: 0 0.7rem 0 0;
+}
+
+#mobile-popup-buttons button > * {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 .display-none {
   display: none;
 }
@@ -25,6 +109,30 @@
   margin-left: 1rem;
   padding: 1rem 1rem;
   font-weight: 600;
+}
+
+.pop-up-button img {
+  margin-left: 0.6rem;
+}
+
+#mobile-popup-image-div {
+  position: relative;
+  max-width: 100%;
+}
+
+#mobile-popup-image-div img {
+  width: 100%;
+}
+
+.mobile-popup-close-button {
+  border: none;
+  color: #fff;
+  background: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 #small-nav a {
@@ -80,10 +188,6 @@ hr {
 
 .t-center {
   text-align: center;
-}
-
-body {
-  margin: 0.5rem 0;
 }
 
 header {
@@ -195,11 +299,6 @@ h1 {
   flex: 1;
 }
 
-.d-flex li {
-  list-style: none;
-  margin: 0 0.5rem 0.8rem;
-}
-
 #toggle-down {
   display: block;
   height: 45px;
@@ -269,10 +368,6 @@ h1 {
   margin: 0.8rem 0;
 }
 
-.card-lang {
-  margin-left: 0.4rem;
-}
-
 .card-list {
   margin: 0;
   padding: 0;
@@ -301,7 +396,35 @@ h1 {
   line-height: 24px;
   margin-top: 1.5rem;
   margin-bottom: 1.3rem;
-  filter: contrast(1.5);
+  filter: contrast(1.2);
+}
+
+.pop-up-button {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  padding: 1.3rem 0.7rem 0.3rem 0.7rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  filter: contrast(1.2);
+}
+
+.other-button {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  padding: 0.7rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  filter: contrast(1.2);
 }
 
 #about-me {
@@ -374,16 +497,6 @@ h1 {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-}
-
-.lang-card-specs li {
-  background-color: #fff;
-  border-radius: 8px;
-  color: #36b37e;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.8rem;
-  margin: 0.3rem;
 }
 
 .o-1 {
@@ -487,9 +600,19 @@ footer {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
   }
+
+  .mobile-popup-close-button {
+    font-size: 3rem;
+    top: 2%;
+    right: 4%;
+  }
 }
 
 @media (min-width: 600px) {
+  .mobile-popup-close-button {
+    font-size: 4rem;
+  }
+
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
@@ -509,6 +632,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .mobile-popup-close-button {
+    top: 5%;
+    right: 5%;
+  }
+
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
     background-size: cover;
@@ -577,6 +705,10 @@ footer {
     font-weight: 500;
     font-size: 0.9rem;
     margin: 0.5rem 0.5rem;
+  }
+
+  #desktop-buttons a {
+    text-decoration: none;
   }
 
   #big-nav li a {
@@ -690,6 +822,74 @@ footer {
 
   .btn-gettouch {
     margin: 0;
+  }
+
+  #desktop-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1c7d0b9;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    z-index: 3;
+  }
+
+  #desktop-popup {
+    width: 920px;
+    height: 90%;
+    max-width: 60%;
+    background-color: #fff;
+    left: 20%;
+    padding: 1rem;
+    border: 1px solid #ebecf0;
+    border-radius: 8px;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    overflow-y: auto;
+  }
+
+  #desktop-popup-image {
+    max-width: 100%;
+  }
+
+  #desktop-popup .desktop-popup-close-button {
+    align-self: flex-end;
+    margin: 1rem 0;
+    border: none;
+    background-color: #ebecf0;
+    color: #67798e;
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #desktop-popup-header-container {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #desktop-popup-header-container h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #172b4d;
+  }
+
+  #desktop-buttons a:nth-child(1) {
+    margin-right: 1.5rem;
+  }
+
+  #desktop-popup p {
+    text-align: left;
+  }
+
+  #desktop-popup .card-lang ul {
+    margin: 0;
+  }
+
+  #desktop-popup .card-lang ul li {
+    margin: 0 0.7rem 1rem 0;
   }
 }
 
