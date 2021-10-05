@@ -2,6 +2,11 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  overflow: auto;
+  margin: 0.5rem 0;
+}
+
 .card-lang {
   margin-left: 0.4rem;
 }
@@ -29,17 +34,19 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 3;
-  width: 100vw;
   height: 100vh;
+  overflow: auto;
 }
 
 #mobile-popup {
   background-color: #fff;
   border: 1px solid #dfe1e6;
-  box-sizing: content-box;
-  padding: 1.2rem;
+  padding: 1.2rem 0.9rem 0 0.8rem;
+  margin-bottom: 2rem;
   border-radius: 16px;
+  height: 836px;
 }
 
 #mobile-popup p {
@@ -49,6 +56,23 @@
   color: #344563;
 }
 
+.pop-up-button a:nth-child(1) {
+  min-width: 141px;
+}
+
+.pop-up-button a:nth-child(2) {
+  min-width: 158px;
+}
+
+#mobile-popup-buttons {
+  justify-content: space-between;
+}
+
+#mobile-popup-buttons a {
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+}
+
 #mobile-popup .card-lang {
   margin: 0;
 }
@@ -56,10 +80,6 @@
 #mobile-popup ul li {
   justify-content: flex-start;
   margin: 0 0.7rem 0 0;
-}
-
-#mobile-popup-buttons {
-  justify-content: space-evenly;
 }
 
 #mobile-popup-buttons button > * {
@@ -92,12 +112,20 @@
   font-weight: 600;
 }
 
-.pop-up-button a:nth-child(1) {
-  min-width: 141px;
+.mobile-menu-image-div {
+  position: relative;
+  max-width: 100%;
 }
 
-.pop-up-button a:nth-child(2) {
-  min-width: 158px;
+.mobile-popup-close-button {
+  border: none;
+  color: #fff;
+  background: none;
+  position: absolute;
+  top: 43px;
+  right: 43px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 #small-nav a {
@@ -153,10 +181,6 @@ hr {
 
 .t-center {
   text-align: center;
-}
-
-body {
-  margin: 0.5rem 0;
 }
 
 header {

@@ -88,9 +88,11 @@ let projectsArr = [
 ]
 
 const projectsDetailsBtns = document.querySelectorAll(".card-button");
+const bodyScroll = document.querySelector("body");
 
 for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
     projectsDetailsBtns[i].addEventListener("click", ()=>{
+        bodyScroll.style.overflow = 'hidden';
         if(screen.width < 992)
         {
             let mobileProjectPopupWindow = document.querySelector("#mobile-popup-container");
@@ -100,6 +102,7 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             let mobileProjectPopupWindowDescription = document.querySelector("#mobile-popup-container p");
             let mobileProjectPopupWindowSeeLive = document.querySelector("#mobile-popup-container #see-live");
             let mobileProjectPopupWindowSeeSource = document.querySelector("#mobile-popup-container #see-source");
+            let mobileProjectPopupWindowCloseBtn = document.querySelector('#mobile-popup-container .mobile-popup-close-button');
 
             mobileProjectPopupWindowImage.src = projectsArr[i].mobileFeaturedImage;
             mobileProjectPopupWindowName.textContent = projectsArr[i].mobileName;
@@ -114,6 +117,9 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
             mobileProjectPopupWindowSeeLive.href = projectsArr[i].linkToLive;
             mobileProjectPopupWindowSeeSource.href = projectsArr[i].linkToSource;
             mobileProjectPopupWindow.classList.remove('display-none');
+            mobileProjectPopupWindowCloseBtn.addEventListener('click', () => {
+                mobileProjectPopupWindow.classList.add('display-none');
+            })
         }
         else 
         {
