@@ -92,6 +92,14 @@
   font-weight: 600;
 }
 
+.pop-up-button a:nth-child(1) {
+  min-width: 141px;
+}
+
+.pop-up-button a:nth-child(2) {
+  min-width: 158px;
+}
+
 #small-nav a {
   text-decoration: none;
   color: #3a4a42;
@@ -364,7 +372,7 @@ h1 {
   background: #36b37f;
   border-radius: 4px;
   border: none;
-  padding: 0.7rem;
+  padding: 1.3rem 0.7rem 0.3rem 0.7rem;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -372,6 +380,10 @@ h1 {
   margin-top: 1.5rem;
   margin-bottom: 1.3rem;
   filter: contrast(1.2);
+}
+
+.pop-up-button img {
+  margin-left: 0.6rem;
 }
 
 .other-button {
@@ -653,6 +665,10 @@ footer {
     margin: 0.5rem 0.5rem;
   }
 
+  #desktop-buttons a {
+    text-decoration: none;
+  }
+
   #big-nav li a {
     text-decoration: none;
     color: #172b4d;
@@ -765,23 +781,6 @@ footer {
   .btn-gettouch {
     margin: 0;
   }
-}
-
-@media (min-width: 1200px) {
-  #card-grid {
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-    grid-template-rows: repeat(2, minmax(439px, 2fr));
-    grid-gap: 2rem 1.25rem;
-    margin: 1rem 7rem;
-  }
-
-  #feature {
-    display: flex;
-  }
-
-  .d-flex li {
-    margin: 0 0.5rem 0.8rem;
-  }
 
   #desktop-popup-container {
     position: fixed;
@@ -835,10 +834,6 @@ footer {
     color: #172b4d;
   }
 
-  #desktop-buttons a {
-    text-decoration: none;
-  }
-
   #desktop-buttons a:nth-child(1) {
     margin-right: 1.5rem;
   }
@@ -853,5 +848,22 @@ footer {
 
   #desktop-popup .card-lang ul li {
     margin: 0 0.7rem 1rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #card-grid {
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, minmax(439px, 2fr));
+    grid-gap: 2rem 1.25rem;
+    margin: 1rem 7rem;
+  }
+
+  #feature {
+    display: flex;
+  }
+
+  .d-flex li {
+    margin: 0 0.5rem 0.8rem;
   }
 }
