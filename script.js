@@ -27,8 +27,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
@@ -38,8 +38,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
@@ -49,8 +49,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
@@ -60,8 +60,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
@@ -71,8 +71,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
@@ -82,8 +82,8 @@ const projectsArr = [
     desktopFeaturedImage: 'img/DesktopPopup.jpg',
     mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
+    linkToSource: 'https://github.com/luftedar/My-Portfolio',
   },
 ];
 
