@@ -24,8 +24,14 @@
 #mobile-popup-container {
   background-color: #c1c7d0;
   margin: 0;
-  padding: 1.3rem 1.2rem 1.5rem 1.2rem;
+  padding: 1.3rem 1.2rem;
   text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
 }
 
 #mobile-popup {
@@ -750,26 +756,27 @@ footer {
   }
 
   #desktop-popup-container {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #c1c7d0;
-    opacity: 0.9;
+    background-color: #c1c7d0b9;
     padding: 2rem 1.5rem 2rem 1.5rem;
+    z-index: 3;
   }
 
   #desktop-popup {
     width: 920px;
-    height: 1083px;
+    height: 90%;
     max-width: 60%;
     background-color: #fff;
-    top: 50%;
     left: 20%;
     padding: 1rem;
     border: 1px solid #ebecf0;
     border-radius: 8px;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    overflow-y: auto;
   }
 
   #desktop-popup-image {
