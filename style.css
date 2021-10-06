@@ -242,6 +242,11 @@ hgroup {
   -webkit-animation: scale 5s infinite alternate;
 }
 
+.error {
+  color: #36b37f;
+  font-weight: 700;
+}
+
 @keyframes scale {
   to { transform: scale(0.8); }
 }
