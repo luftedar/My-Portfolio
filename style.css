@@ -243,6 +243,7 @@ hgroup {
 }
 
 .error {
+  margin: 0;
   color: #36b37f;
   font-weight: 700;
 }
@@ -573,7 +574,6 @@ h1 {
 
 .btn-gettouch {
   width: 129px;
-  margin: 0 auto;
 }
 
 .feature-header {
@@ -599,6 +599,10 @@ footer {
   justify-content: center;
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
+}
+
+#button-container {
+  flex-direction: column;
 }
 
 @media (min-width: 520px) {
@@ -896,6 +900,14 @@ footer {
 
   #desktop-popup .card-lang ul li {
     margin: 0 0.7rem 1rem 0;
+  }
+
+  #button-container {
+    justify-content: space-between;
+  }
+
+  .error {
+    margin-right: 15rem;
   }
 }
 

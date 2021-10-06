@@ -154,39 +154,59 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
   });
 }
 
-function showMessage(input, message, type) {
-	const msg = input.parentNode.querySelector("small");
-	msg.innerText = message;
-	input.className = type ? "success" : "error";
-	return type;
-}
+// function showMessage(input, message, type) {
+// 	const msg = input.parentNode.querySelector("small");
+// 	msg.innerText = message;
+// 	input.className = type ? "success" : "error";
+// 	return type;
+// }
 
-function showError(input, message) {
-	return showMessage(input, message, false);
-}
+// function showError(input, message) {
+// 	return showMessage(input, message, false);
+// }
 
-function validateEmail(input, lowercaseMsg) {
-	var i=0;
-  var character='';
-  while (i <= input.value.length){
-    character = input.value.charAt(i);
-    if (!isNaN(character * 1)){
-      if (character != character.toLowerCase()){
-        return showError(input, lowercaseMsg);
-      }
-    }
-    i++;
-  }
-}
+// function validateEmail(input, lowercaseMsg) {
+// 	var i=0;
+//   var character='';
+//   while (i <= input.value.length){
+//     character = input.value.charAt(i);
+//     if (!isNaN(character * 1)){
+//       if (character != character.toLowerCase()){
+//         return showError(input, lowercaseMsg);
+//       }
+//     }
+//     i++;
+//   }
+// }
 
-const form = document.forms[0];
-const email = form.elements['email'];
-const EMAIL_LowerCase = "Please enter your email in lowercase";
+// const form = document.forms[0];
+// const email = form.elements['email'];
+// const EMAIL_LowerCase = "Please enter your email in lowercase";
+// const error = document.querySelector('.error');
+
+// form.addEventListener('submit', (event)=>{
+//   if(!validateEmail(email,EMAIL_LowerCase)){
+//     error.innerText = EMAIL_LowerCase;
+//     event.preventDefault();
+//   }
+// });
+
+const email = document.querySelector('#email');
+const form = document.querySelector('#form');
 const error = document.querySelector('.error');
 
-form.addEventListener('submit', (event)=>{
-  if(!validateEmail(email,EMAIL_LowerCase)){
-    error.innerText = EMAIL_LowerCase;
-    event.preventDefault();
+let caseChecker = (name) => { 
+  for (let i = 0 ; i <name.length; i++){
+    if( name[i] != name[i].toLowerCase()) {
+      return false;
+    }
+    return true;
   }
-});
+}
+
+form.addEventListener('submit' , (e) => {
+  if(!caseChecker(email.value)) {
+    error.innerHTML = "Please!<br>Enter your email<br>in lowercase!";
+    e.preventDefault();
+  }
+})
