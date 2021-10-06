@@ -903,11 +903,12 @@ footer {
   }
 
   #button-container {
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .error {
-    margin-right: 15rem;
+    margin-right: 3rem;
   }
 }
 
@@ -925,5 +926,9 @@ footer {
 
   .d-flex li {
     margin: 0 0.5rem 0.8rem;
+  }
+
+  .error {
+    margin: 0 auto;
   }
 }

@@ -163,8 +163,8 @@ const caseChecker = (name) => {
     if (name[i] != name[i].toLowerCase()) {
       return false;
     }
-    return true;
   }
+  return true;
 };
 
 form.addEventListener('submit', (e) => {
