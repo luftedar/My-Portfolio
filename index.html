@@ -318,15 +318,19 @@
         I'm always interested in hearing about new projects, so if you'd like
         to chat please get in touch.
       </h2>
-      <form action="https://formspree.io/f/myylobyb" method="POST" class="inputs-container">
+      <form action="https://formspree.io/f/myylobyb" method="POST" class="inputs-container" id="form">
         <input type="text" name="fullname" placeholder="Full name" class="form-input" required maxlength="30"
           id="name" />
         <input type="email" name="email" placeholder="Email address" class="form-input" required id="email" />
-        <textarea name="textarea" id="gettouch" cols="20" rows="10" class="form-textarea" required maxlength="500"
+        <textarea name="textarea" id="gettouch" cols="30" rows="10" class="form-textarea" required maxlength="500"
           placeholder="Enter text here"></textarea>
-        <button type="submit" class="btn other-button btn-gettouch g-btn">
-          Get in touch
-        </button>
+        <div class="d-flex d-center" id="button-container">
+          <button type="submit" class="btn other-button btn-gettouch g-btn">
+            Get in touch
+          </button>
+          <small class="error t-center"></small>
+        </div>
+        
       </form>
     </section>
     <section>

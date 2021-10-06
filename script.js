@@ -153,3 +153,23 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
     }
   });
 }
+
+const email = document.querySelector('#email');
+const form = document.querySelector('#form');
+const error = document.querySelector('.error');
+
+const caseChecker = (name) => {
+  for (let i = 0; i < name.length; i += 1) {
+    if (name[i] !== name[i].toLowerCase()) {
+      return false;
+    }
+  }
+  return true;
+};
+
+form.addEventListener('submit', (e) => {
+  if (!caseChecker(email.value)) {
+    error.innerHTML = 'Please!<br>Enter your email<br>in lowercase!';
+    e.preventDefault();
+  }
+});

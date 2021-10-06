@@ -242,6 +242,12 @@ hgroup {
   -webkit-animation: scale 5s infinite alternate;
 }
 
+.error {
+  margin: 0;
+  color: #36b37f;
+  font-weight: 700;
+}
+
 @keyframes scale {
   to { transform: scale(0.8); }
 }
@@ -563,11 +569,11 @@ h1 {
   -o-border-radius: 4px;
   margin-bottom: 20px;
   padding: 8px;
+  resize: none;
 }
 
 .btn-gettouch {
   width: 129px;
-  margin: 0 auto;
 }
 
 .feature-header {
@@ -593,6 +599,10 @@ footer {
   justify-content: center;
   background: url("img/Frame.png") bottom 50px right no-repeat;
   background-size: 15%;
+}
+
+#button-container {
+  flex-direction: column;
 }
 
 @media (min-width: 520px) {
@@ -891,6 +901,15 @@ footer {
   #desktop-popup .card-lang ul li {
     margin: 0 0.7rem 1rem 0;
   }
+
+  #button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .error {
+    margin-right: 3rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -907,5 +926,9 @@ footer {
 
   .d-flex li {
     margin: 0 0.5rem 0.8rem;
+  }
+
+  .error {
+    margin: 0 auto;
   }
 }
