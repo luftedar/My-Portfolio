@@ -160,7 +160,7 @@ const error = document.querySelector('.error');
 
 const caseChecker = (name) => {
   for (let i = 0; i < name.length; i += 1) {
-    if (name[i] !== name[i].toLowerCase()) {
+    if (name[i] != name[i].toLowerCase()) {
       return false;
     }
   }
