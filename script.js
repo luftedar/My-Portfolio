@@ -182,9 +182,11 @@ function validateEmail(input, lowercaseMsg) {
 const form = document.forms[0];
 const email = form.elements['email'];
 const EMAIL_LowerCase = "Please enter your email in lowercase";
+const error = document.querySelector('.error');
 
 form.addEventListener('submit', (event)=>{
   if(!validateEmail(email,EMAIL_LowerCase)){
+    error.innerText = EMAIL_LowerCase;
     event.preventDefault();
   }
 });
