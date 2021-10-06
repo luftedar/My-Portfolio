@@ -159,8 +159,8 @@ const form = document.querySelector('#form');
 const error = document.querySelector('.error');
 
 const caseChecker = (name) => {
-  for (let i = 0; i < name.length; i++) {
-    if (name[i] != name[i].toLowerCase()) {
+  for (let i = 0; i < name.length; i += 1) {
+    if (name[i] !== name[i].toLowerCase()) {
       return false;
     }
   }
