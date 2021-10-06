@@ -127,8 +127,8 @@ for (let i = 0; i < projectsDetailsBtns.length; i += 1) {
       const desktopProjectPopupWindowName = document.querySelector('#desktop-popup-container h2');
       const desktopProjectPopupWindowTechnologies = document.querySelector('#desktop-popup-container .card-list.d-flex');
       const desktopProjectPopupWindowDescription = document.querySelector('#desktop-popup-container p');
-      const desktopProjectPopupWindowSeeLive = document.querySelector('#desktop-popup-container #see-live');
-      const desktopProjectPopupWindowSeeSource = document.querySelector('#desktop-popup-container #see-source');
+      const desktopProjectPopupWindowSeeLive = document.querySelector('#desktop-popup-container #see-live-desk');
+      const desktopProjectPopupWindowSeeSource = document.querySelector('#desktop-popup-container #see-source-desk');
       const desktopProjectPopupWindowCloseBtn = document.querySelector('#desktop-popup-container .desktop-popup-close-button');
 
       desktopProjectPopupWindowImage.src = projectsArr[i].desktopFeaturedImage;
