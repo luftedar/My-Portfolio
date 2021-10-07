@@ -173,3 +173,35 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+const nameElement = document.getElementById('name');
+const emailElement = document.getElementById('email');
+const textElement = document.getElementById('gettouch');
+
+if(localStorage.length === 0) {
+  populateStorage();
+}else {
+  setFields();
+}
+
+function populateStorage() {
+  localStorage.setItem('name', document.getElementById('name').value);
+  localStorage.setItem('email', document.getElementById('email').value);
+  localStorage.setItem('textarea', document.getElementById('gettouch').value);
+
+  setFields();
+}
+
+function setFields() {
+  let currentNameInput = localStorage.getItem('name');
+  let currentEmailInput = localStorage.getItem('email');
+  let currentTextArea = localStorage.getItem('textarea');
+
+  nameElement.value = currentNameInput;
+  emailElement.value = currentEmailInput;
+  textElement.value = currentTextArea;
+}
+
+nameElement.onchange = populateStorage;
+emailElement.onchange = populateStorage;
+textElement.onchange = populateStorage;
