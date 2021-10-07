@@ -177,27 +177,22 @@ form.addEventListener('submit', (e) => {
 const nameElement = document.getElementById('name');
 const emailElement = document.getElementById('email');
 const textElement = document.getElementById('gettouch');
-let getParse = () => {
-  let stringFormData = localStorage.getItem('formData');
-  let formData = JSON.parse(stringFormData);
+const getParse = () => {
+  const stringFormData = localStorage.getItem('formData');
+  const formData = JSON.parse(stringFormData);
   return formData;
-}
+};
 
-let stringifySet = () => {
-  let formData = {
+const stringifySet = () => {
+  const formData = {
     name: nameElement.value,
     email: emailElement.value,
     message: textElement.value,
-  }
-  let stringFormData = JSON.stringify(formData);
-  let setted = localStorage.setItem('formData', stringFormData);
+  };
+  const stringFormData = JSON.stringify(formData);
+  const setted = localStorage.setItem('formData', stringFormData);
   return setted;
-}
-
-function createLocalStorageFormData() {
-  stringifySet();
-  setFormData();
-}
+};
 
 function setFormData() {
   nameElement.value = getParse().name;
@@ -205,7 +200,12 @@ function setFormData() {
   textElement.value = getParse().message;
 }
 
-if(!localStorage.getItem('formData')) {
+function createLocalStorageFormData() {
+  stringifySet();
+  setFormData();
+}
+
+if (!localStorage.getItem('formData')) {
   createLocalStorageFormData();
 } else {
   setFormData();
@@ -214,14 +214,14 @@ if(!localStorage.getItem('formData')) {
 nameElement.addEventListener('blur', () => {
   getParse().name = nameElement.value;
   stringifySet();
-})
+});
 
 emailElement.addEventListener('blur', () => {
   getParse().email = emailElement.value;
   stringifySet();
-})
+});
 
 textElement.addEventListener('blur', () => {
   getParse().message = textElement.value;
   stringifySet();
-})
+});
