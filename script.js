@@ -205,3 +205,28 @@ function setFields() {
 nameElement.onchange = populateStorage;
 emailElement.onchange = populateStorage;
 textElement.onchange = populateStorage;
+
+function createLocalStorageFormData() {
+  let formData = {
+    name: nameElement.value,
+    email: emailElement.value,
+    message: textElement.value,
+  }
+  let stringFormData = JSON.stringify(formData);
+  localStorage.setItem('formDate', stringFormData);
+  setFormData();
+}
+
+function setFormData() {
+  let stringFormData = localStorage.getItem('formDate');
+  let formData = JSON.parse(stringFormData);
+  nameElement.value = formData.name;
+  emailElement.value = formData.email;
+  textElement.value = formData.message;
+}
+
+if(!localStorage.getItem('formDate')) {
+  createLocalStorageFormData();
+} else {
+  setFormData();
+}
