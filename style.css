@@ -605,6 +605,13 @@ footer {
   flex-direction: column;
 }
 
+#project1-img {
+  max-width: 100%;
+  height: 222px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 @media (min-width: 520px) {
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;

@@ -20,15 +20,15 @@ closeMenu.addEventListener('click', () => {
 
 const projectsArr = [
   {
-    mobileName: 'Keeping track of hundreds of components',
-    desktopName: 'Keeping track of hundreds of <br> components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileFeaturedImage: 'img/MobilePopup.jpg',
-    desktopFeaturedImage: 'img/DesktopPopup.jpg',
-    mobileTechnologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    desktopTechnologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    linkToLive: 'https://luftedar.github.io/My-Portfolio/',
-    linkToSource: 'https://github.com/luftedar/My-Portfolio',
+    mobileName: 'Antalya Drummers Summit',
+    desktopName: 'Antalya Drummers <br> Summit',
+    description: "This project made for the Microverse's capstone project at the end of the first module. Used Cindy Chin's Creative Common Global Summit 2015 Design. Addition to project requirments I added the JavaScript part and the design of the mobile menu. Please leave issues if you have a suggestion! If you like this project, don't forget to give a star!",
+    mobileFeaturedImage: 'img/Project1-mbl.png',
+    desktopFeaturedImage: 'img/Project1.png',
+    mobileTechnologies: ['HTML', 'CSS', 'JavaScript'],
+    desktopTechnologies: ['HTML', 'CSS', 'JavaScript'],
+    linkToLive: 'https://luftedar.github.io/capstone-project-1/',
+    linkToSource: 'https://github.com/luftedar/capstone-project-1',
   },
   {
     mobileName: 'Keeping track of hundreds of components',
