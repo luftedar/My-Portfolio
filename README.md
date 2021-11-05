@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> My first HTML&CSS&JavaScript project in Microverse.
+> Projects that build in the first module of the Microverse. Build with HTML CSS and JavaScript.
 
 ![screenshot](./app_screenshot.png)
 
