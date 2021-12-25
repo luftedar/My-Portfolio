@@ -612,6 +612,11 @@ footer {
   object-fit: cover;
 }
 
+#project2-img {
+  max-width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 520px) {
   header {
     background: url("img/header-illsutration-mobile.png") center center no-repeat;
@@ -937,5 +942,9 @@ footer {
 
   .error {
     margin: 0 auto;
+  }
+
+  #project2-img {
+    width: 120%;
   }
 }
